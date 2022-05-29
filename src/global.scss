@@ -1,0 +1,118 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/***** Font Family for entire app *****/
+
+@font-face {
+    font-family: Lato_Black;
+    src: url("../src/assets/font/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: Lato_BlackItalic;
+    src: url("../src/assets/font/Lato/Lato-BlackItalic.ttf");
+}
+
+@font-face {
+    font-family: Lato_Bold;
+    src: url("../src/assets/font/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lato_BoldItalic;
+    src: url("../src/assets/font/Lato/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: Lato_Italic;
+    src: url("../src/assets/font/Lato/Lato-Italic.ttf");
+}
+
+@font-face {
+    font-family: Lato_Light;
+    src: url("../src/assets/font/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Lato_LightItalic;
+    src: url("../src/assets/font/Lato/Lato-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: Lato_Regular;
+    src: url("../src/assets/font/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato_Thin;
+    src: url("../src/assets/font/Lato/Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: Lato_ThinItalic;
+    src: url("../src/assets/font/Lato/Lato-ThinItalic.ttf");
+}
+
+ion-toolbar {
+    --background: #5E5E5E;
+    text-align: center;
+    font-family: Lato_Black;
+    color: white;
+}
+
+ion-title {
+    color: white;
+    font-family: Lato_Black;
+    font-size: 20px;
+    position: relative;
+    right: 20px;
+}
+
+ion-back-button {
+    color: white;
+    --icon-font-size: 2rem;
+}
+
+ion-label {
+    color: white;
+    font-family: Lato_Black;
+}
+
+ion-searchbar {
+    .searchbar-input-container {
+        .searchbar-input {
+            border-radius: 30px;
+            border: .5px solid #9e9e9e;
+            box-shadow: none;
+        }
+    }
+}

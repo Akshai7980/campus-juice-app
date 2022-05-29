@@ -1,0 +1,100 @@
+.bg {
+    --background: #fff url('../../assets/image/log-bg.png') no-repeat center center / cover;
+}
+
+.logo-container {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.logo-img {
+    height: auto;
+    width: 45%;
+}
+
+.main-container {
+    padding: 30% 10% 0% 10%;
+}
+
+.input-icon-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.input-field {
+    --placeholder-color: white;
+    --placeholder-font-weight: 600;
+    --placeholder-font-style: 'Lato_Black';
+    font-family: 'Lato_Black';
+    --padding-start: 20px;
+    color: white;
+}
+
+.input-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 7px;
+}
+
+.remember-me-container {
+    display: flex;
+    margin: 25px 0px 0px 0px;
+}
+
+ion-checkbox {
+    margin-right: 10px;
+    --border-color: #e38120;
+    --background-checked: #d83128;
+    --border-color-checked: #e38120;
+}
+
+.forgot-password-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+ion-button {
+    text-transform: none;
+    --background: linear-gradient(to bottom, #E48720 10%, #D83128 80%);
+    --padding-end: 45px;
+    --padding-start: 45px;
+    height: 50px;
+    font-size: 21px;
+    --padding-bottom: 5px;
+    font-family: Lato_Bold;
+    --box-shadow: transparent;
+}
+
+.bottom-container {
+    display: flex;
+    float: right;
+    margin-top: 35%;
+}
+
+.bottom-content-container {
+    margin-right: 15px;
+}
+
+H6 {
+    margin: 0px;
+    color: white;
+    font-family: 'Lato_Regular';
+}
+
+H3 {
+    margin: 0px;
+    float: right;
+    color: white;
+    font-family: 'Lato_Bold';
+}
+
+.bottom-forward-icon {
+    height: 35px;
+    width: 35px;
+}

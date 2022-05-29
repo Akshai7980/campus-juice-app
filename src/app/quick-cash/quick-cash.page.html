@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button icon="chevron-back"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Quick Cash</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header>
+    <ion-toolbar>
+
+        <div class="header-button-container">
+            <ion-button shape="round">POST JOB</ion-button>
+            <ion-button shape="round">ENTER SERVICE</ion-button>
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div style="padding: 5px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;">
+        <ion-segment value="jobs" style="border-radius: 20px 20px 0px 0px;">
+            <ion-segment-button value="jobs">
+                <ion-label>JOBS</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="services">
+                <ion-label>SERVICES</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+
+        <ion-header>
+            <ion-toolbar style="--background: white;">
+                <ion-searchbar placeholder="Search jobs here"></ion-searchbar>
+            </ion-toolbar>
+        </ion-header>
+    </div>
+
+    <div *ngFor="let j of jobs; let i = index;">
+        <div>
+            <img src="" alt="">
+        </div>
+
+        <div>
+            <H6> {{ j.job_title }} </H6>
+            <p style="margin: 0px;"> {{ j.job_description }} </p>
+            <div>
+                <img src="" alt=""> <span></span>
+            </div>
+
+            <div>
+                <img [src]=" j.posted_user " alt=""> <span> {{ j.job_posted_by }} </span>
+                <p> {{ j.job_viewed }}'+' </p>
+            </div>
+
+            <div>
+                <p> {{ j.posted_time }} </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</ion-content>

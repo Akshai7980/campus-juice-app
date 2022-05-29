@@ -1,0 +1,74 @@
+.bg {
+    --background: #fff url('../../assets/image/landing-bg.png') no-repeat center center / cover;
+}
+
+.logo {
+    padding: 80px 70px 0px 70px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 60%;
+}
+
+ion-button {
+    text-transform: none;
+    --background: linear-gradient(to bottom, #E48720 10%, #D83128 80%);
+    --padding-end: 50px;
+    --padding-start: 50px;
+    height: 50px;
+    font-size: 21px;
+    --padding-bottom: 5px;
+    font-family: Lato_Bold;
+    --box-shadow: transparent;
+}
+
+.bottom-container {
+    margin-top: 10%;
+}
+
+H6 {
+    text-align: center;
+    font-family: 'Lato_Bold';
+    color: white;
+}
+
+H6::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: white;
+    left: 0;
+    top: 86.5%;
+    position: absolute;
+    margin-left: 15px;
+}
+
+H6::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: white;
+    right: 0;
+    top: 86.5%;
+    position: absolute;
+    margin-right: 15px;
+}
+
+.bottom-social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-img {
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+}

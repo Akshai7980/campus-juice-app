@@ -1,0 +1,65 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button icon="chevron-back"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Newsletter</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div class="main-container">
+
+        <div style="position: relative;
+        top: 36%;">
+            <div>
+                <form [formGroup]="newsLetterForm" (ngSubmit)="newsLetter()">
+                    <div style="text-align: center;">
+                        <H3 style="color: #FFFFFF;
+                    font-family: 'Lato_Bold';">BE REWARDED</H3>
+                        <p style="color: #FFFFFF;
+                    font-family: 'Lato_Bold';
+                    margin: 3px 0px;">Members Only</p>
+                        <p style="color: #FFFFFF;
+                    font-family: 'Lato_Italic';
+                    font-size: 12px;
+                    margin-top: 0px;">REWARDS, OFFERS, SPECIAL NEWS, GIVE-AWAYS</p>
+                    </div>
+
+                    <div style="padding: 10px 20px 10px 20px;
+                background-color: #1D1E22;
+                margin: 10px 45px 15px 45px;
+                border-radius: 10px;
+                position: relative;
+                left: 5px;">
+                        <div style="border-bottom: .5px solid #707173;">
+                            <ion-input placeholder="Enter your email" type="email" formControlName="student_email" autocapitalize="true" style="--placeholder-color: white;
+                        --placeholder-opacity: 1px; margin-bottom: 7px; color: white;"></ion-input>
+                        </div>
+
+                        <div>
+                            <ion-datetime placeholder="Date of Birthday" type="email" formControlName="date_birth" displayFormat="DD-MM-YYYY" pickerFormat="DD-MM-YYYY" (ionChange)="doSomething()" autocapitalize="true" style="--placeholder-color: white;
+                        --placeholder-opacity: 1px; margin-bottom: 7px; color: white; --padding-start: 5px;"></ion-datetime>
+                        </div>
+
+                    </div>
+
+                    <div style="margin: 0px 45px;
+                text-align: center;">
+                        <ion-button type="submit" shape="round" expand="block">JOIN THE CLUB
+                            <ion-icon name="chevron-forward" slot="end"></ion-icon>
+                        </ion-button>
+                        <p style="color: #FFFFFF;
+                    font-family: Lato_Italic;
+                    font-size: 15px;
+                    margin: 8px 0px;">Every Student's Favourite</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-app>
+    <ion-split-pane contentId="main-content">
+        <ion-menu contentId="main-content" type="reveal">
+            <ion-content>
+                <div class="top-container" *ngIf="userDetails">
+                    <img [src]=" this.userImg " onerror='this.onerror="";this.src="../../assets/image/user.jpeg";' alt="" class="profile-img" routerLink="/tabs/tab4">
+                    <div class="text-container">
+                        <H4> {{ userDetails.name }} </H4>
+                        <p> {{ userDetails.email }} </p>
+                    </div>
+                </div>
+                <ion-list id="inbox-list">
+                    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index; ">
+                        <ion-item (click)="openPage(i)" routerDirection="root" lines="none" detail="false">
+                            <img class="menu-icons" [src]="p.img" />
+                            <ion-label>{{ p.title }}</ion-label>
+                        </ion-item>
+                    </ion-menu-toggle>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+        <ion-router-outlet id="main-content"></ion-router-outlet>
+    </ion-split-pane>
+</ion-app>

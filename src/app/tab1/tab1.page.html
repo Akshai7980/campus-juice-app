@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <div class="header-container">
+            <div>
+                <ion-buttons>
+                    <ion-menu-button>
+                        <img src="../../assets/icon/side-menu.png" alt="" (click)="getUserDetails()">
+                    </ion-menu-button>
+                </ion-buttons>
+            </div>
+
+            <div>
+                <ion-title>
+                    Hi, {{this.userDetails?.name}}
+                </ion-title>
+            </div>
+
+            <div routerLink="/tabs/tab4">
+                <img [src]="this.userImg" alt="" onerror='this.onerror="";this.src="../../assets/image/user.jpeg";' class="user-profile-img">
+            </div>
+        </div>
+
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+    <ion-toolbar class="second-toolbar">
+        <ion-searchbar style="--border-radius: 10px !important;"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <div class="main-container">
+        <div class="sub-container">
+
+            <div class="img-container" (click)="gotoPage('sup-with-you-today')">
+                <img src="../../assets/image/01.png" alt="">
+            </div>
+
+            <div class="img-container" (click)="gotoPage('fresh-gist')">
+                <img src="../../assets/image/02.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="sub-container">
+
+            <div class="img-container" (click)="gotoPage('just-ask-a-celebrity')">
+                <img src="../../assets/image/03.png" alt="">
+            </div>
+
+            <div class="img-container" (click)="gotoPage('quick-cash')">
+                <img src="../../assets/image/04.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="sub-container">
+
+            <div class="img-container" (click)="gotoPage('lets-hangout')">
+                <img src="../../assets/image/05.png" alt="">
+            </div>
+
+            <div class="img-container" (click)="gotoPage('study-group')">
+                <img src="../../assets/image/06.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="sub-container">
+
+            <div class="img-container" (click)="gotoPage('cj-happenings')">
+                <img src="../../assets/image/07.png" alt="">
+            </div>
+
+            <div class="img-container" (click)="gotoPage('news-letter')">
+                <img src="../../assets/image/08.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</ion-content>

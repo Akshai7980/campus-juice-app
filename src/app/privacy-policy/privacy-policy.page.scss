@@ -1,0 +1,106 @@
+ion-content {
+    --background: #5E5E5E;
+}
+
+.second-toolbar {
+    padding: 0px 20px 0px 20px;
+}
+
+ion-segment {
+    border-bottom: 1px solid lightgrey;
+}
+
+ion-segment-button {
+    --indicator-height: 4px;
+    --indicator-color: white;
+    font-family: 'Lato_Black';
+    text-transform: none;
+    --ripple-color: grey;
+    font-size: 17px;
+}
+
+.segment-title {
+    margin: 0px;
+    color: white;
+}
+
+.main-container {
+    padding: 15px;
+}
+
+.top-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.terms-img {
+    height: 70px;
+    width: 70px;
+}
+
+H2 {
+    margin: 0px;
+    color: white;
+    font-family: 'Lato_Bold';
+}
+
+.p-date {
+    margin: 7px 0px 0px 0px;
+    color: white;
+    font-size: 12px;
+}
+
+.para-container {
+    padding: 10px 20px 0px 20px;
+}
+
+.p-para {
+    margin: 0px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lato_Regular';
+    margin-bottom: 10px;
+}
+
+.terms-container {
+    padding: 10px 20px 0px 20px;
+}
+
+.terms-sub-container {
+    margin-bottom: 20px;
+}
+
+H6 {
+    margin: 0px;
+    color: white;
+    font-family: 'Lato_Regular';
+    margin-bottom: 10px;
+}
+
+.terms-p-para {
+    margin: 0px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lato_Regular';
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-decline {
+    --color: white;
+    --border-color: white;
+    --border-width: .5px;
+}
+
+.accept-button {
+    --color: white;
+    --border-color: white;
+    --border-width: .5px;
+    --background: #08AAD8;
+}

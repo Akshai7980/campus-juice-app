@@ -1,0 +1,61 @@
+<ion-content class="bg">
+
+    <div class="logo-container">
+        <img src="../../assets/logo/logo.png" alt="" class="logo-img">
+    </div>
+
+    <div class="main-container">
+
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+
+            <div class="input-icon-container">
+                <ion-input placeholder="Full Name" type="text" class="input-field" formControlName="name"></ion-input>
+                <img src="../../assets/icon/reg-ic1.png" alt="" class="input-icon">
+            </div>
+
+            <div class="input-icon-container">
+                <ion-input placeholder="Password" type="password" class="input-field" formControlName="password"></ion-input>
+                <img src="../../assets/icon/reg-ic3.png" alt="" class="input-icon">
+            </div>
+
+            <div class="input-icon-container">
+                <ion-input placeholder="E-mail" type="email" class="input-field" formControlName="email"></ion-input>
+                <img src="../../assets/icon/reg-ic2.png" alt="" class="input-icon">
+            </div>
+
+            <div class="input-icon-container">
+                <ion-input placeholder="Phone" type="number" class="input-field" formControlName="phone"></ion-input>
+                <img src="../../assets/icon/reg-ic4.png" alt="" class="input-icon">
+            </div>
+
+            <div class="input-icon-container">
+                <ion-input placeholder="University" type="text" class="input-field" formControlName="university"></ion-input>
+                <img src="../../assets/icon/reg-ic5.png" alt="" class="input-icon">
+            </div>
+
+            <div class="input-icon-container">
+                <ion-select placeholder="Campus" interfaceOptions="ion-popover" type="text" class="input-field" formControlName="campus" style="width: 80%;">
+                    <ion-select-option *ngFor="let c of campusList" [value]="c.id"> {{ c.campus_name }} </ion-select-option>
+                </ion-select>
+                <img src="../../assets/icon/reg-ic6.png" alt="" class="input-icon">
+            </div>
+
+            <div class="button-container">
+                <ion-button shape="round" type="submit">Sign up</ion-button>
+            </div>
+
+        </form>
+
+        <div class="bottom-container">
+            <div class="bottom-content-container">
+                <H6>Already have an account ?</H6>
+                <H3>Sign in</H3>
+            </div>
+            <div>
+                <img src="../../assets/icon/reg-ic.png" alt="" routerLink="/sign-in" class="bottom-forward-icon">
+            </div>
+        </div>
+
+    </div>
+
+</ion-content>

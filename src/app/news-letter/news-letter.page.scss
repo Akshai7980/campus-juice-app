@@ -1,0 +1,25 @@
+ion-content {
+    --background: #5E5E5E;
+}
+
+.main-container {
+    background-image: url("../../assets/image/newsletter-bg.png");
+    background-position: initial;
+    background-repeat: round;
+    height: -webkit-fill-available;
+}
+
+ion-button {
+    --background: linear-gradient(to bottom, #E48720 10%, #D83128 80%);
+    height: 43px;
+    font-family: 'Lato_Black';
+    font-size: 16px;
+}
+
+ion-icon {
+    background: linear-gradient( 180deg, #d83128, #e48720);
+    border-radius: 50%;
+    padding: 7px;
+    position: absolute;
+    right: -5%;
+}

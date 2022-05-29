@@ -1,0 +1,85 @@
+.bg {
+    --background: #fff url('../../assets/image/log-bg.png') no-repeat center center / cover;
+}
+
+.logo-container {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.logo-img {
+    height: auto;
+    width: 45%;
+}
+
+.main-container {
+    padding: 15px 40px 0px 40px;
+}
+
+.input-icon-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.input-field {
+    --placeholder-color: white;
+    --placeholder-font-weight: 600;
+    --placeholder-font-style: 'Lato_Black';
+    font-family: 'Lato_Black';
+    --padding-start: 20px;
+    color: white;
+}
+
+.input-icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 7px;
+}
+
+.button-container {
+    text-align: center
+}
+
+ion-button {
+    text-transform: none;
+    --background: linear-gradient(to bottom, #E48720 10%, #D83128 80%);
+    --padding-end: 50px;
+    --padding-start: 50px;
+    height: 50px;
+    font-size: 21px;
+    --padding-bottom: 5px;
+    font-family: Lato_Bold;
+    --box-shadow: transparent;
+}
+
+.bottom-container {
+    display: flex;
+    float: right;
+    margin-top: 20px;
+}
+
+.bottom-content-container {
+    margin-right: 15px;
+}
+
+H6 {
+    margin: 0px;
+    color: white;
+    font-family: 'Lato_Regular';
+}
+
+H3 {
+    margin: 0px;
+    float: right;
+    color: white;
+    font-family: 'Lato_Bold';
+}
+
+.bottom-forward-icon {
+    height: 35px;
+    width: 35px;
+}

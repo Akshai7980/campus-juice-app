@@ -1,0 +1,85 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 3
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
+</ion-content> -->
+
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <div style="display: flex; align-items: center;">
+            <div>
+                <ion-buttons>
+                    <ion-menu-button>
+                        <img src="../../assets/icon/side-menu.png" alt="">
+                    </ion-menu-button>
+                </ion-buttons>
+            </div>
+
+            <div style="position: relative;
+          left: 20%;">
+                <ion-title>
+                    Notification
+                </ion-title>
+            </div>
+
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <div style="display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px 5px 20px;">
+            <H5 style="margin: 0px;
+          font-family: 'Lato_Black';">Notifications &nbsp; ({{this.notificationDetails?.length}})</H5>
+            <img src="../../assets/icon/dlt1.png" alt="" style="margin: 0px;
+          font-family: 'Lato_Black'; height: 55px;
+  width: 55px;">
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div>
+        <div *ngFor="let n of notificationDetails; let i = index;" style="display: flex;
+      align-items: center;
+      justify-content: space-evenly; border-bottom: .5px solid grey;" [style.background]="n.seen_status==='0' ? '#747474' : ''">
+            <div style="width: 50px;
+          height: 50px;
+          margin: 15px;">
+                <img *ngIf="n.seen_status==='0'" src="../../assets/icon/bell.png" alt="" style="height: 50px;
+              width: 50px;">
+                <img *ngIf="n.seen_status!=='0'" src="../../assets/icon/bell1.png" alt="" style="height: 50px;
+                              width: 50px;">
+            </div>
+            <div style="margin: 0px 20px 0px 5px;">
+                <p style="margin: 0px; color: white;
+              font-family: 'Lato_Bold';"> {{n.title}} </p>
+                <p style="margin: 0px; color: white;
+              font-size: 12px;
+              letter-spacing: 1px;
+              font-family: 'Lato_Regular';"> {{n.content}} </p>
+                <p style="margin: 0px; float: right; color: white;
+              font-size: 10px;
+              letter-spacing: 1px;
+              font-family: 'Lato_Regular';"> {{n.date}} </p>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

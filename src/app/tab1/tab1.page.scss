@@ -1,0 +1,42 @@
+ion-content {
+    --background: #5E5E5E;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ion-title {
+    font-size: 18px;
+}
+
+.user-profile-img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.second-toolbar {
+    padding: 0px 30px 0px 30px;
+}
+
+ion-searchbar {
+    --border-radius: 10px !important;
+}
+
+.main-container {
+    margin-top: 15px;
+}
+
+.sub-container {
+    display: flex;
+    padding: 0px 5px 0px 5px;
+}
+
+.img-container {
+    padding: 5px;
+}

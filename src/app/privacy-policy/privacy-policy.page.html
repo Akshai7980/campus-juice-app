@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button routerLink="/tabs/tab1">
+                <img src="../../assets/icon/side-menu.png" alt="">
+            </ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header class="ion-no-border">
+    <ion-toolbar class="second-toolbar">
+        <ion-segment [(ngModel)]="segment">
+            <ion-segment-button value="privacy">
+                <p class="segment-title">Privacy Policy</p>
+            </ion-segment-button>
+            <ion-segment-button value="terms">
+                <p class="segment-title">Terms & Condition</p>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div [ngSwitch]="segment" class="main-container">
+        <div *ngSwitchCase="'privacy'">
+
+            <div class="top-content-container">
+                <img src="../../assets/image/terms.png" alt="" class="terms-img">
+                <div>
+                    <H2>PRIVACY POLICY</H2>
+                    <p class="p-date">Last updated: {{this.privacyPolicy[0]?.date}}</p>
+                </div>
+            </div>
+
+
+            <div class="para-container">
+                <p class="p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+                <p class="p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+                <p class="p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+            </div>
+
+        </div>
+
+        <div *ngSwitchCase="'terms'" class="terma-container">
+            <div class="terms-sub-container">
+                <H2>TERMS & CONDITION</H2>
+                <p class="p-date">Last updated: {{this.privacyPolicy[0]?.date}}</p>
+            </div>
+
+            <div>
+                <H6>1. Terms</H6>
+                <p class="terma-p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+
+                <H6>1. Terms</H6>
+                <p class="terma-p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+
+                <H6>1. Terms</H6>
+                <p class="terma-p-para"> {{this.privacyPolicy[0]?.para1}} </p>
+
+                <div class="button-container">
+                    <ion-button shape="round" fill="outline" class="button-decline">DECLINE</ion-button>
+                    <ion-button shape="round" fill="outline" class="accept-button">ACCEPT</ion-button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</ion-content>

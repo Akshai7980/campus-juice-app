@@ -1,0 +1,26 @@
+ion-content {
+    --background: #5E5E5E;
+}
+
+ion-button {
+    --background: linear-gradient(to bottom, #E48720 10%, #D83128 80%);
+    font-family: Lato_Bold;
+    --box-shadow: transparent;
+}
+
+.header-button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ion-segment-button {
+    --color: black;
+    --color-checked: white !important;
+    --indicator-color: none;
+    --background-checked: #D62A26;
+}
+
+ion-label {
+    color: unset !important;
+}
